@@ -1,5 +1,5 @@
 name: Pull Request Analyzer
-run-name: Build Me Credit
+
 on:
   push:
     branches:
