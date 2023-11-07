@@ -1,5 +1,5 @@
 name: Pull Request Analyzer
-run-name: Build Me Credit
+
 on:
   push:
     branches:
@@ -21,6 +21,9 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
+
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
 
       - name: Build with Gradle
         run: ./gradlew clean build
