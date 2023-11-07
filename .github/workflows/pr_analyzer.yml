@@ -1,5 +1,6 @@
 name: Pull Request Analyzer
 
+
 on:
   push:
     branches:
